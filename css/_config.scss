@@ -1,0 +1,46 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background: url('../svg/points.svg')
+}
+
+img{
+    width:100%;
+}
+.Icon{
+      /* Permet de redimensionner en changeant la font-size de l’icône */
+  width: 1em;
+  height: 1em;
+  /* Bel alignement visuel des icônes avec le texte */
+  vertical-align: -0.15em;
+  /* fill par défaut = valeur de la propriété couleur de son élément parent */
+  fill: currentColor;
+  /* Les paths et les strokes qui dépassent de la viewBox peuvent apparaître dans IE.
+               Si vous utilisez normalize.css, inutile de l’ajouter. */
+  overflow: hidden;
+}
+
+h2{
+    font-family: LatoBlack;
+}
+
+p{
+    font-family: LatoRegular;
+    color:$gris;
+}
+
+div.bouton{
+    padding: 40px 0;
+    background: #FFF;
+}
+
+button {
+    padding: 5px 0;
+    margin: auto;
+    border-radius: 15px;
+    font-family: LatoBlack;
+    border:none;
+}

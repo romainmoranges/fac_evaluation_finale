@@ -1,0 +1,24 @@
+@media only screen and (min-width: $desktop) {
+    header{
+        padding:0 20%;
+    }
+    main{
+        padding:0 20%;
+    }
+    aside{
+        padding:0 20%;
+        width:initial;
+    }
+
+    div.bouton button{
+        width: 50%;
+    }
+
+    div.action button{
+        width: 20%;
+    }
+    section div article {
+        padding: 0 20%;
+    }
+
+}

@@ -1,0 +1,231 @@
+@charset "UTF-8";
+/* Breakpoints */
+/* Couleurs */
+@font-face {
+  font-family: LatoRegular;
+  src: url("../fonts/Lato/Lato-Regular.ttf");
+}
+
+@font-face {
+  font-family: LatoBlack;
+  src: url("../fonts/Lato/Lato-Bold.ttf");
+}
+
+@font-face {
+  font-family: Anton;
+  src: url("../fonts/Anton/Anton-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url("../svg/points.svg");
+}
+
+img {
+  width: 100%;
+}
+
+.Icon {
+  /* Permet de redimensionner en changeant la font-size de l’icône */
+  width: 1em;
+  height: 1em;
+  /* Bel alignement visuel des icônes avec le texte */
+  vertical-align: -0.15em;
+  /* fill par défaut = valeur de la propriété couleur de son élément parent */
+  fill: currentColor;
+  /* Les paths et les strokes qui dépassent de la viewBox peuvent apparaître dans IE.
+               Si vous utilisez normalize.css, inutile de l’ajouter. */
+  overflow: hidden;
+}
+
+h2 {
+  font-family: LatoBlack;
+}
+
+p {
+  font-family: LatoRegular;
+  color: #6D6F71;
+}
+
+div.bouton {
+  padding: 40px 0;
+  background: #FFF;
+}
+
+button {
+  padding: 5px 0;
+  margin: auto;
+  border-radius: 15px;
+  font-family: LatoBlack;
+  border: none;
+}
+
+header {
+  background: #FFF;
+  padding: 5px 0;
+}
+
+header div.logo {
+  padding: 5px;
+  width: 70%;
+}
+
+main {
+  background: #FFF;
+}
+
+main div.logoaccueil {
+  font-size: 100px;
+  text-align: center;
+}
+
+main h2 {
+  color: #FCB731;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  font-family: Anton;
+}
+
+main h2 span {
+  display: block;
+  font-size: 70%;
+}
+
+main div.chiffres {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 10em;
+  justify-content: space-around;
+}
+
+aside {
+  width: 95%;
+  margin: auto;
+  margin: 10px 0;
+}
+
+aside h2 {
+  color: #6D6F71;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+aside p {
+  padding: 10px;
+}
+
+div.bouton {
+  text-align: center;
+}
+
+div.bouton button {
+  background: #6D6F71;
+  color: #FFF;
+  width: 90%;
+}
+
+div.action button {
+  background: #FCB731;
+  color: #000;
+  width: 40%;
+}
+
+section div {
+  margin: 10px 0px;
+  width: 100%;
+}
+
+section div article {
+  padding: 10px;
+}
+
+section div article h2 {
+  font-family: Anton;
+  color: #6D6F71;
+}
+
+section div article h4 {
+  font-family: LatoBlack;
+  margin-bottom: 10px;
+  color: #6D6F71;
+}
+
+section div article div {
+  width: 80%;
+}
+
+section div article p {
+  line-height: 22px;
+  margin-left: 15px;
+  color: #6D6F71;
+}
+
+section div.actus {
+  background: #FCB731;
+  color: #FFF;
+}
+
+section div.actus h2 {
+  color: #FFF;
+}
+
+section div.actus h4 {
+  color: #FFF;
+}
+
+section div.actus p {
+  color: #FFF;
+}
+
+section div.demarche {
+  background: #B3D143;
+}
+
+section div.temoin {
+  background: #E8DDCA;
+}
+
+footer {
+  background: #6D6F71;
+  display: flex;
+  flex-direction: column;
+  color: #FFF;
+  align-items: center;
+}
+
+footer p {
+  padding: 5px;
+  color: #FFF;
+  font-family: LatoBlack;
+  font-size: 1.2em;
+}
+
+@media only screen and (min-width: 1279px) {
+  header {
+    padding: 0 20%;
+  }
+  main {
+    padding: 0 20%;
+  }
+  aside {
+    padding: 0 20%;
+    width: initial;
+  }
+  div.bouton button {
+    width: 50%;
+  }
+  div.action button {
+    width: 20%;
+  }
+  section div article {
+    padding: 0 20%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
