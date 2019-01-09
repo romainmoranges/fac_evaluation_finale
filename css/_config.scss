@@ -1,46 +1,54 @@
-*{
-    margin:0;
-    padding:0;
+.svgsprite {
+    width:0px;
+    height:0px;
 }
+.svgicon {
 
-body{
-    background: url('../svg/points.svg')
-}
-
-img{
-    width:100%;
-}
-.Icon{
-      /* Permet de redimensionner en changeant la font-size de l’icône */
-  width: 1em;
-  height: 1em;
+  /* Permet de redimensionner en changeant la font-size de l’icône */
+  width: 1em; height: 1em;
   /* Bel alignement visuel des icônes avec le texte */
   vertical-align: -0.15em;
   /* fill par défaut = valeur de la propriété couleur de son élément parent */
   fill: currentColor;
   /* Les paths et les strokes qui dépassent de la viewBox peuvent apparaître dans IE.
-               Si vous utilisez normalize.css, inutile de l’ajouter. */
+     Si vous utilisez normalize.css, inutile de l’ajouter. */
   overflow: hidden;
 }
 
-h2{
-    font-family: LatoBlack;
+.undisplay {
+    display: none;
 }
 
-p{
+img {
+    width:100%;
+}
+
+.image {
+    width:100%;
+}
+
+body {
+    background: url(../svg/points.svg);
+}
+
+h2 {
+    text-align: center;
+    color: $gris;
     font-family: LatoRegular;
-    color:$gris;
 }
 
-div.bouton{
-    padding: 40px 0;
-    background: #FFF;
+p {
+    color: $gris;
+    font-family: LatoRegular;
 }
 
 button {
-    padding: 5px 0;
-    margin: auto;
-    border-radius: 15px;
-    font-family: LatoBlack;
-    border:none;
+    background: none;
+    border: 0;
+    color: inherit;
+    /* cursor: default; */
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;
 }

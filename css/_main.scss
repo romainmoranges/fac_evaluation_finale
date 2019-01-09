@@ -1,131 +1,396 @@
+/* Mobile First */
+
+/* Header */
 header {
-    background:#FFF;
-    padding: 5px 0;
-
-    div.logo {
-        padding: 5px;
-        width: 70%;
-    }
+    background: url('../img/Photos/20161202_101925.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
-main {
-    background: #FFF;
-    div.logoaccueil {
-        font-size: 100px;
-        text-align: center;
-    }
-
-    h2 {
-        color: $jaune;
-        width: 90%;
-        margin: auto;
-        text-align: center;
-        font-family: Anton;
-
-        span {
-            display: block;
-            font-size: percentage(0.7);
-        }
-    }
-
-    div.chiffres {
-        display: flex;
-        flex-wrap: wrap;
-        font-size: 10em;
-        justify-content: space-around;
-    }
+header .main-menu {
+    min-height: 260px;
+    max-height: 260px;
 }
 
-aside {
-    width: 95%;
-    margin: auto;
-    margin:10px 0;
-
-    h2 {
-        color: $gris;
-        width: 90%;
-        margin: auto;
-        text-align: center;
-    }
-    p{
-        padding:10px;
-    }
+header .top-menu {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #FFF;
 }
 
-div.bouton {
+header .logo {
+    background: url(../img/logos/EnergiesCollectives_rectangle_Logo_ajuste.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height:50px;
+    width:75%;
+}
+
+header #menu {
+    height:50px;
+    background-color:$vert;
+    background-image: url(../svg/noun_Burger_806722.svg);
+    background-repeat: no-repeat;
+    width:50px;
+}
+
+header #menu .main-nav {
+    display:none;
+}
+
+header .main-nav-mobile ul {
+    list-style-type: none;
     text-align: center;
-    button{
-        background:$gris;
-        color:#FFF;
-        width:90%;
-    }
+    padding-left:0;
+    background-color:$vert;
 }
 
-div.action{
-    button{
-        background: $jaune;
-        color: #000;
-        width:40%;
-    }
+header .main-nav-mobile ul li {
+    border-bottom: solid 1px white;
+    width:80%;
+    margin:auto;
+    padding: 5px 0;
 }
+
+header .main-nav-mobile ul li a {
+    font-family: Anton;
+    color: #FFF;
+}
+
+#souscrire a {
+    padding: 0px 20px;
+    background-color: $jaune;
+    color: #000;
+}
+
+/* section */
 
 section {
-    div{
-        margin:10px 0px;;
-        width:100%;
-        article{
-            padding:10px;
-            h2{
-                font-family: Anton;
-                color:$gris;
-            }
-            h4{
-                font-family: LatoBlack;
-                margin-bottom:10px;
-                color:$gris;
-            }
-            div{
-                width:80%;
-            }
+    width:100%;
+    background-color: #FFF;
+}
 
-            p{
-                line-height: 22px;
-                margin-left:15px;
-                color:$gris;
-            }
-        }
-    }
-    div.actus{
-        background:$jaune;
+section .image {
+    width:30%;
+    margin: auto;
+}
+
+section h1 {
+    font-family: Anton;
+    color: $jaune;
+    text-align: center;
+}
+
+section h1 span {
+    font-size: 0.7em;
+    display: block;
+}
+
+
+/* Chiffres */
+
+.chiffres {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.chiffres .picto {
+    width:49%;
+    text-align:center;
+}
+
+.chiffres .picto svg {
+    font-size:70px;
+
+}
+
+/* Description */
+
+/* Action */
+
+.action {
+    margin: auto;
+    text-align: center;
+    width:100%;
+    background: #FFF;
+}
+
+.action button {
+    background-color: $gris;
+    color: #FFF;
+    padding: 5px 2px;
+    border-radius: 5px;
+    font-family: LatoBlack;
+}
+
+.action button svg {
+    display: block;
+}
+
+/* Souscrire */
+
+.souscrire {
+    margin: auto;
+    text-align: center;
+    background-color: #FFF;
+}
+
+.souscrire button {
+    background-color: $jaune;
+    color: #000;
+    padding: 5px 2px;
+    border-radius: 5px;
+    font-family: LatoBlack;
+}
+
+.actus {
+    width: 100%;
+    background-color: $jaune;
+    margin-top:10px;
+    color: #FFF;
+    p {
         color: #FFF;
-        h2{
-            color:#FFF;
-        }
-        h4{
-            color:#FFF;
-        }
-        p{
-            color: #FFF;
-        }
-    }
-    div.demarche{
-        background:$vert;
-    }
-    div.temoin{
-        background:$marronClair;
     }
 }
 
-footer{
-    background: $gris;
-display: flex;
-flex-direction: column;
-color:#FFF;
-align-items: center;
-    p{
-        padding: 5px;
-        color:#FFF;
-        font-family: LatoBlack;
-        font-size: 1.2em;
+/* Démarche */
+
+.demarche {
+    background-color: $vert;
+    color: $gris;
+}
+
+.installations {
+    color: $gris;
+}
+
+.temoignage {
+    color: $gris;
+    background-color: $marronClair;
+}
+
+/* Article */
+
+article {
+    width: 95%;
+    padding: 10px 0;
+    margin: 10px auto !important;
+}
+
+article .texte-article {
+    width:85%;
+    margin: auto;
+}
+
+article h3 {
+    font-family: Anton ;
+    text-transform: uppercase;
+}
+
+article h4 {
+    font-family: LatoBlack;
+}
+
+.top-article {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Footer */
+
+footer {
+    background-color: $gris;
+    color: #FFF;
+}
+
+footer .footer-nav {
+}
+
+footer .footer-nav ul {
+    list-style-type: none;
+    padding-left: 0px;
+    text-align: center;
+}
+
+footer .footer-nav ul li a{
+    color: #FFF;
+    font-family: LatoBlack;
+    font-size: 1.3em;
+}
+
+footer .newsletter {
+    text-align:center;
+}
+
+footer .newsletter p {
+    color: #FFF;
+    font-family: LatoBlack;
+    font-size: 1.3em;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+footer .partenaires { 
+    margin-top: 15px;
+    display: flex;
+}
+
+footer .partenaires h6 {
+    font-family: LatoRegular;
+    width: 30%;
+}
+
+footer .partenaires .partenaires-logo {
+    display: flex;
+    width: 70%;
+    flex-wrap: wrap;  
+}
+
+footer .partenaires-logo .image {
+    width:15%;
+}
+/* tablet */
+@media screen and (min-width: $small) {
+
+}
+
+/* laptop */
+@media screen and (min-width: $medium) {
+
+    header .top-menu {
+        background-color: initial;
     }
+
+    header .logo {
+        background: url(../img/logos/LogoEnergiesCollectives_COMPLET.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        width:15%;
+        height: iniital;
+    }
+
+    header #menu {
+        width:85%;
+        height: initial;
+        background: initial;
+    }
+
+    header #menu .main-nav {
+        display: block;
+        width:100%;
+    }
+    header #menu .main-nav ul {
+        display:flex;
+        flex-direction:row;
+        list-style: none;
+        padding-left:0;
+    }
+
+    header #menu .main-nav ul li {
+        background-color: $vert;
+        padding: 8px;
+    }
+
+    #souscrire {
+        background-color: $jaune !important;
+        margin-left: 10px;
+    }
+
+    header #menu .main-nav ul li a {
+        color: #000;
+        font-family: Anton;
+    }
+
+    header .main-nav-mobile{
+        display: none;
+    }
+
+    /* chiffres */
+
+    .chiffres .picto {
+        width:24%;
+    }
+
+    /* description */
+
+    .description .desktop-flex {
+        display: flex;
+    }
+
+    .description .desktop-flex h2 {
+        text-align: right;
+        align-self: center;
+        width: 45%;
+    }
+
+    .description .desktop-flex .text {
+        background-color: #FFF;
+        padding-left:35px;
+    }
+
+    /* Action */
+
+    .action {
+        padding: 20px 0;
+    }
+
+    /* souscrire */
+
+    .souscrire {
+        padding: 20px 0;
+    }
+    .inner{
+        width:$medium;
+        margin: auto;
+    }
+
+    .installations .action {
+        padding: 0px;
+        background: initial;
+    }
+
+
+    /* article */
+    article .main-article {
+        display:flex;
+    }
+
+    article .main-article .image {
+        width:35%;
+    }
+
+    article .main-article .texte-article {
+        margin-left: 10%;
+    }
+
+    /* footer */
+    footer .footer-nav ul {
+        display:flex;
+        justify-content: space-between;
+    }
+
+    footer .partenaires h6 {
+        width:10%;
+        align-self: center;
+    }
+
+    footer .partenaires .partenaires-logo {
+        width:90%;
+        flex-wrap: nowrap;
+        justify-content: space-around;  
+    }
+
+    footer .partenaires .partenaires-logo .image { 
+        width:5%;
+    }
+
+}
+
+/* desktop || TV */
+@media screen and (min-width: $large) {
+
 }
